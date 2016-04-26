@@ -28,7 +28,7 @@ if(WIN32)
 elseif(UNIX)
   add_compile_options(-pthread)
   set(THREADING thread)
-  list(APPEND EXTRA_TARGET_LINK_LIBRARIES -pthread)
+  list(APPEND EXTRA_TARGET_LINK_LIBRARIES -pthread rt)
 endif()
 
 if(USEPCRE)
